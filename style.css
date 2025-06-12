@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap');
+
+:root {
+    /* Primary Colors */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --slate-blue-bg: hsl(252, 100%, 67%);
+    --royal-blue-bg: hsl(241, 81%, 54%);
+
+    /* Circle */
+    --Violet-blue-c: hsla(256, 72%, 46%, 1);
+    --Persian-blue-c: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Hanken Grotesk, sans-serif;
+    background-color: var(--Pale-blue);
+
+    position: relative;
+    padding-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--White);
+    max-width: 40rem;
+}
+
+.result__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding: 2.5rem;
+    padding-top: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    background-image:
+    linear-gradient(to top, var(--royal-blue-bg), var(--slate-blue-bg));
+}
+
+.result__text {
+    font-size: 1.125rem;
+    color: var(--Light-lavender);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.score__box {
+    margin-bottom: 1rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-image:
+    linear-gradient(to top,var(--Persian-blue-c), var(--Violet-blue-c));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        width: fit-content;
+        color: var(--White);
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    p {
+        width: fit-content;
+        color: hsl(252, 100%, 74%);
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+
+.description {
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    line-height: 140%;
+
+    span {
+        color: var(--White);
+        display: block;
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.summary__box {
+    padding: 1.8rem;
+    padding-top: 1.5rem;
+
+    h2 {
+        color: var(--Dark-gray-blue);
+        font-size: 1.125rem;
+    }
+}
+
+.ability__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 19rem;
+
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.8rem;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 1.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.skill__text {
+    font-weight: 700;
+}
+
+.skill__score {
+    font-weight: 700;
+    
+    span {
+        color: hsl(224, 30%, 27%, 0.5);
+    }
+}
+
+.Reaction {
+    background-color: hsla(0, 100%, 67%, 0.08);
+    .skill__text {
+        color: var(--Light-red);
+    }
+}
+
+.Memory {
+    background-color: hsl(39, 100%, 56%, 0.08);
+    .skill__text {
+        color: var(--Orangey-yellow);
+    }
+}
+
+.Verbal {
+    background-color: hsl(166, 100%, 37%, 0.08);
+    .skill__text {
+        color: var(--Green-teal);
+    }
+}
+
+.Visual {
+    background-color: hsl(234, 85%, 45%, 0.08);
+    .skill__text {
+        color: var(--Cobalt-blue);
+    }
+}
+
+.continue__button {
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 2rem;
+    color: var(--White);
+    background-image: linear-gradient(var(--Dark-gray-blue));
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.continue__button:hover {
+    background-image: linear-gradient(to top,var(--royal-blue-bg), var(--slate-blue-bg));
+}   
+
+.attribution { 
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+
+    a { color: hsl(228, 45%, 44%); }
+}

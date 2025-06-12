@@ -1,0 +1,49 @@
+@media screen and (min-width: 37.5rem) {
+    body {
+        height: 37.5rem;
+    }
+
+    main {
+        display: flex;
+        width: 85%;
+
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+
+    .result__box {
+        width: 50%;
+        border-radius: 2rem;
+        padding: 3.5rem;
+        padding-top: 2.5rem;
+
+        justify-content: space-between;
+    }
+
+    .result__text {
+        font-size: 1.2rem;
+    }
+
+    .score__box {
+        height: 10rem;
+        width: 10rem;
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .description {
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+    .summary__box {
+        width: 50%;
+    }
+}
