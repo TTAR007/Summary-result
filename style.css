@@ -198,12 +198,4 @@ main {
 
 .continue__button:hover {
     background-image: linear-gradient(to top,var(--royal-blue-bg), var(--slate-blue-bg));
-}   
-
-.attribution { 
-    font-size: 0.8rem;
-    position: absolute;
-    bottom: 0;
-
-    a { color: hsl(228, 45%, 44%); }
 }
