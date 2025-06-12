@@ -40,6 +40,7 @@ body {
 main {
     background-color: var(--White);
     max-width: 40rem;
+    box-shadow: 1rem 1rem 1.2rem rgba(128, 128, 128, 0.157);
 }
 
 .result__box {
